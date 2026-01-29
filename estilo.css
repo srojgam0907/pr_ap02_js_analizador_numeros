@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: red;
+}

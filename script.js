@@ -4,17 +4,24 @@ const mensaje= document.querySelector("#textoError");
 formulario.addEventListener("submit", function(event) {
     event.preventDefault(); //evita que la pagina se recargue
 
-    const texto= document.querySelector("#numero");
-    const numeros= texto.split(",");
+    const texto= document.querySelector("#numero").value;
+    const numeros= texto.split(",").map(n => Number(n));
 
-    //comprobarAnalisis
+    comprobarArray(numeros)
     //analisisNumero
     //Mostrar resultados
 
 }); 
 
-function comprobarAnalisis() {
+function mostrarMensajeError(mensaje) {
+    mensaje.textContent= mensaje;
 
+    setTimeout(() => {
+        mensaje.textContent= "";
+    }, 2000);
+}
+
+function comprobarArray(numeros) {
 
 
 };

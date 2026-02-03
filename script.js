@@ -42,8 +42,8 @@ function analisisArray(valores) {
     let positivos= 0;
     let negativos= 0;
     let ceros= 0;
-    let mayor;
-    let menor;
+    let mayor= 0;
+    let menor= 0;
 
     //Bucle para contar
     for(let i= 0; i< valores.length; i++) {
@@ -58,10 +58,10 @@ function analisisArray(valores) {
             negativos++;
         }
 
-        if(valores[i] > valores[i+1]) {
+        if(valores[i] > mayor) {
             mayor= valores[i];
 
-        } else if(valores[i] < valores[i+1]) {
+        } else if(valores[i] < menor) {
             menor= valores[i];
         }
 
